@@ -1,0 +1,24 @@
+<html>
+<head>
+    <title>cvs fetching</title>
+    <link rel="stylesheet" href="">
+    <link rel="stylesheet" href="http://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    </head>
+    <body>
+<!--        <script src="https://d3js.org/d3-dsv.v1.min.js"></script>-->
+    <script>
+      fetchdata();
+        
+       async function fetchdata(){
+        const respons = await fetch("C:\Users\abc\Downloads\ZonAnn.Ts+dSST.csv");
+           const data = await respons.text();
+           console.log(data);
+       }
+//        
+//        const csvtojson =require("csvtojson");
+//        csvtojson.fromFile("C:\Users\abc\Downloads\ZonAnn.Ts+dSST.csv").then(source=>{
+//            console.log(source);
+//        })
+        </script>
+    </body>
+    </html>
